@@ -1,0 +1,18 @@
+html {
+    cursor: url('../assets/cursor/cursor.svg') 14 14, pointer;
+    /* 16px boyutunda */
+}
+
+a,
+button,
+img {
+    cursor: url('../assets/cursor/cursor2.svg') 14 14, pointer;
+    /* 16px boyutunda */
+}
+
+a:hover,
+button:hover,
+img:hover {
+    cursor: url('../assets/cursor/cursor2.svg')14 14, pointer;
+    /* 16px boyutunda */
+}

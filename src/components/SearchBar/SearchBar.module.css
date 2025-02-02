@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #2d5a7d;
+    /* Soft blue */
+    --hover-color: #1a3b60;
+    --placeholder-color: #ccd7e1;
+    --focus-border-color: #1f4f73;
+    --button-bg-color: #4c74a6;
+    --button-hover-color: #3e5e8e;
+    --text-color: #ffffff;
+    /* White text */
+    --background-color: #e5f2ff;
+    /* Soft light blue */
+    --input-border-radius: 25px;
+    --button-border-radius: 25px;
+    --box-shadow-light: rgba(0, 0, 0, 0.1);
+    --box-shadow-dark: rgba(0, 0, 0, 0.2);
+    --font-family: 'Helvetica Neue', sans-serif;
+    --transition-time: 0.3s;
+    --input-padding: 14px;
+    --button-padding: 12px 30px;
+}
+
+
+/* Header */
+.header {
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px var(--box-shadow-dark);
+    border-radius: 40px;
+}
+
+.logocontainer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+}
+
+.logotitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logotitle:hover {
+    color: var(--placeholder-color);
+}
+.logotitle:hover > .logoicon{
+    transform: rotate(45deg);
+}
+.logoicon {
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: transform 0.4s ease;
+    margin-right: 10px;
+}
+
+.logoicon:hover {
+    transform: rotate(45deg);
+}
+
+/* Form */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    padding: 18px 32px;
+    border-radius: var(--button-border-radius);
+    box-shadow: 0 8px 18px var(--box-shadow-dark);
+    max-width: 600px;
+    width: 100%;
+    height: 70px;
+    transition: box-shadow var(--transition-time), transform var(--transition-time);
+    margin: 20px auto;
+}
+
+.form:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Input */
+.input {
+    flex: 1;
+    padding: var(--input-padding);
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: var(--input-border-radius);
+    outline: none;
+    color: #333;
+    background-color: #f0f5f9;
+    transition: border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.input:focus {
+    border-color: var(--focus-border-color);
+    box-shadow: 0 0 10px var(--focus-border-color);
+    transform: translateY(-1px);
+}
+
+/* Clear Button */
+.clearButton {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.clearButton:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Search Button */
+.searchButton {
+position: relative;
+    background: linear-gradient(145deg, #3a6ea5, #1d3e70);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+.searchButton::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+}
+.searchButton:hover::after {
+    left: 125%;
+}
+.searchButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.searchButton:hover  .svg {
+    transform: rotate(45deg);
+}
+.searchButton:active {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.svg {
+    font-size: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 20px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 12px 18px;
+    }
+
+    .input,
+    .searchButton {
+        width: 100%;
+    }
+
+    .clearButton {
+        font-size: 18px;
+    }
+}

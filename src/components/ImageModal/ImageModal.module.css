@@ -1,0 +1,91 @@
+/* Modal arka planı: Tam ekran, içerik merkezde */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.89);
+    /* Yarı saydam koyu arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal içerik: Fotoğrafın düzgün yerleşmesi için */
+.modalContent {
+    position: relative;
+    width: 95vw;
+    /* Ekranın %95'i */
+    height: 95vh;
+    /* Ekranın %95'i */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    /* Arka plan yok */
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Kaydırma olmadan */
+}
+
+/* Resmin düzgün yerleşmesi ve boyutlandırılması */
+.modalContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Orantıları bozmadan sığdırır */
+    display: block;
+    margin: 0 auto;
+    /* Ortalamak için */
+    border-radius: 8px;
+    /* Beyaz kenar çizgisi */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Gölge efekti */
+}
+
+/* Kapatma butonu: Sağ üst köşede */
+/* Kapatma butonu: Sağ üst köşede */
+.closeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    /* Yuvarlak buton */
+    background-color: #2d5a7d;
+    /* Buton arka planı */
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1010;
+    transition: all 0.3s ease;
+    /* Animasyon efekti */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Hafif gölge */
+}
+
+/* Hover efekti */
+.closeButton:hover {
+    background-color: #1e3a5d;
+    /* Butonun hover rengini koyulaştır */
+    transform: scale(1.1);
+    /* Butonu büyütme efekti */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    /* Hoverda daha belirgin gölge */
+}
+
+/* Hover buton üzerine gelince renk ve gölge geçişi */
+.closeButton:focus {
+    outline: none;
+    /* Fokuslandığında etrafındaki çizgiyi kaldırır */
+}
+
