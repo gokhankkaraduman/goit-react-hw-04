@@ -74,7 +74,7 @@ This project is built with **Vite** for a fast development experience and utiliz
 
 ## Demo
 
-You can view a live demo of the project at: [https://goit-react-hw-04-gokhankkaraduman.vercel.app/](https://goit-react-hw-04-gokhankkaraduman.vercel.app/)
+You can view a live demo of the project at: [https://inspirography-git-master-gokhankkaradumans-projects.vercel.app/](https://inspirography-git-master-gokhankkaradumans-projects.vercel.app/)
 
 ---
 
