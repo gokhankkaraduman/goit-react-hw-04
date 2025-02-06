@@ -35,7 +35,7 @@ This project is built with **Vite** for a fast development experience and utiliz
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/gokhankkaraduman/goit-react-hw-04.git](https://www.google.com/search?q=https://github.com/gokhankkaraduman/goit-react-hw-04.git)
+    git clone [https://github.com/gokhankkaraduman/goit-react-hw-04.git]
     ```
 
 2.  **Navigate to the project directory:**
