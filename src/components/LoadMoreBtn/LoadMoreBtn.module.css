@@ -3,9 +3,10 @@
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-    /* Üst ve alt boşluk artırıldı */
+    width: 100%;
 }
 
+/* Button Styles */
 .btn {
     position: relative;
     background: linear-gradient(145deg, #3a6ea5, #1d3e70);
@@ -25,7 +26,7 @@
     animation: gradientAnimation 5s ease infinite;
 }
 
-/* Gradient animasyonu */
+/* Gradient Animation */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -40,7 +41,7 @@
     }
 }
 
-/* Parıltı efekti */
+/* Glare Effect */
 .btn::after {
     content: "";
     position: absolute;
@@ -57,7 +58,7 @@
     left: 125%;
 }
 
-/* Hover ve Active durumları */
+/* Hover and Active States */
 .btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -66,4 +67,54 @@
 .btn:active {
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styles */
+
+/* Large screens (Desktops and large monitors) */
+@media screen and (min-width: 1281px) {
+    .btn {
+        font-size: 1.4rem;
+        padding: 18px 55px;
+    }
+
+    .wrapper {
+        margin: 70px 0;
+    }
+}
+
+/* Medium screens (Tablets and medium-sized laptops) */
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    .btn {
+        font-size: 1.2rem;
+        padding: 15px 50px;
+    }
+
+    .wrapper {
+        margin: 60px 0;
+    }
+}
+
+/* Small screens (Phones and small tablets) */
+@media screen and (max-width: 767px) {
+    .btn {
+        font-size: 1rem;
+        padding: 12px 35px;
+    }
+
+    .wrapper {
+        margin: 40px 0;
+    }
+}
+
+/* Extra small screens (Very small phones) */
+@media screen and (max-width: 480px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 30px;
+    }
+
+    .wrapper {
+        margin: 30px 0;
+    }
 }

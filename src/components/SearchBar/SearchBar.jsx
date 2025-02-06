@@ -59,7 +59,7 @@ const SearchBar = ({ onSearchSubmit, setError }) => {
                                     toast.success('Search term cleared successfully.', toastConfig);
                                 }}
                             >
-                                <ImCross />
+                                <ImCross className={css.cross} />
                             </button>
                         )}
                         <button type="submit" className={css.searchButton}>

@@ -1,21 +1,40 @@
 .loader {
     position: fixed;
-    /* Sayfa kaydırıldığında sabit kalmasını sağlar */
     top: 50%;
-    /* Ekranın ortasına yerleştirir */
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Tam ortalama için */
     display: flex;
-    /* Flexbox ile hizalama */
     flex-direction: column;
-    /* Vertikal hizalama (alt alta) */
     justify-content: center;
-    /* Dikey ortalama */
     align-items: center;
-    /* Yatay ortalama */
     gap: 30px;
-    /* Öğeler arasına 20px boşluk ekler */
     z-index: 9999;
-    /* Diğer öğelerin üstünde görünmesi için */
+}
+
+/* Large screens (Desktops and large monitors) */
+@media screen and (min-width: 1281px) {
+    .loader {
+        gap: 40px;
+    }
+}
+
+/* Medium screens (Tablets and medium-sized laptops) */
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    .loader {
+        gap: 35px;
+    }
+}
+
+/* Small screens (Phones and small tablets) */
+@media screen and (max-width: 767px) {
+    .loader {
+        gap: 25px;
+    }
+}
+
+/* Extra small screens (Very small phones) */
+@media screen and (max-width: 480px) {
+    .loader {
+        gap: 20px;
+    }
 }
