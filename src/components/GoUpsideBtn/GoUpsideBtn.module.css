@@ -1,0 +1,39 @@
+/* GoUpsideButton.module.css */
+.goUpsideButton {
+    position: fixed;
+    bottom: 20px;
+    /* İstediğiniz gibi ayarlayın */
+    right: 20px;
+    /* İstediğiniz gibi ayarlayın */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Yuvarlak buton */
+    background-color: white;
+    /* Buton rengi */
+    border: 1px solid #ccc;
+    /* Buton kenarlığı */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    /* Diğer elementlerin üzerinde kalması için */
+    transition: opacity 0.3s ease;
+    /* Geçiş efekti */
+    opacity: 0.8;
+    /* Opaklık */
+}
+
+.goUpsideButton:hover {
+    opacity: 1;
+    /* Hover efekti */
+}
+
+
+.icon {
+    font-size: 24px;
+    /* İkon boyutu */
+    color: #007bff;
+    /* İkon rengi (örnek olarak mavi) */
+}

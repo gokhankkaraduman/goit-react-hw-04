@@ -9,8 +9,8 @@
     --background-color: #e5f2ff;
     --input-border-radius: 25px;
     --button-border-radius: 25px;
-    --box-shadow-light: rgba(0, 0, 0, 0.1);
-    --box-shadow-dark: rgba(0, 0, 0, 0.2);
+    --box-shadow-light: rgba(0, 0, 0, 0.4);
+    --box-shadow-dark: rgba(0, 0, 0, 0.7);
     --font-family: 'Helvetica Neue', sans-serif;
     --transition-time: 0.3s;
     --input-padding: 14px;

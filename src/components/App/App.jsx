@@ -9,6 +9,8 @@ import ImageGallery from '../ImageGallery/ImageGallery.jsx';
 import ImageLoader from '../Loader/Loader.jsx';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn.jsx';
 import ImageModal from '../ImageModal/ImageModal.jsx';
+import Footer from '../Footer/Footer.jsx';
+import GoUpsideButton from '../GoUpsideBtn/GoUpsideBtn.jsx';
 
 
 function App() {
@@ -82,6 +84,8 @@ function App() {
         onRequestClose={handleCloseModal}
         selectedImage={selectedImage}
       />
+      <GoUpsideButton />
+      <Footer />
     </div>
   );
 }

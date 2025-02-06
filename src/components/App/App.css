@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 body {
-    background: linear-gradient(135deg, #a3c4f3, #6fa3e5, #4a8bc2);
+    background: linear-gradient(to right, #2980B9, #8E44AD);
 }
 
 @media screen and (max-width: 1280px) {
