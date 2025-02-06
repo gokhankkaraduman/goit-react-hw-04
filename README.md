@@ -1,10 +1,16 @@
 # Inspirography ®
 
-[![Inspirography](./src/assets/page_Desktop.png)]
-[![Inspirography](./src/assets/page_Tablet.png)] 
-[![Inspirography](./src/assets/page_Mobile.png)]  ## Project Description
+<table style="width:100%;">
+  <tr>
+    <td align="center" style="vertical-align: top;"><img src="./src/assets/page_Desktop.png" alt="Inspirography Desktop Görünümü" width="500" height="1250"></td>
+    <td align="center" style="vertical-align: top;"><img src="./src/assets/page_Tablet.png" alt="Inspirography Tablet Görünümü" width="500" height="1250"></td>
+    <td align="center" style="vertical-align: top;"><img src="./src/assets/page_Mobile.png" alt="Inspirography Mobil Görünümü" width="150" height="1250"></td>
+  </tr>
+</table>
 
-Inspirography is a React application that allows users to search for images using keywords. It leverages the Unsplash API to fetch and display relevant images based on user queries.  Users can browse the image gallery and view detailed information about each image in a modal window.
+## Project Description
+
+Inspirography is a React application that allows users to search for images using keywords. It leverages the Unsplash API to fetch and display relevant images based on user queries. Users can browse the image gallery and view detailed information about each image in a modal window.
 
 This project is built with **Vite** for a fast development experience and utilizes **React** for dynamic UI rendering and state management.
 
@@ -61,18 +67,20 @@ This project is built with **Vite** for a fast development experience and utiliz
 -   **Modal View:** Click on an image to open a modal window with larger image and details.
 -   **Loading Indicator:** Show a loading spinner while images are being fetched.
 -   **Error Handling:** Display informative error messages to the user if API requests fail.
--   **"Load More" Functionality:**  Enable users to load additional images.
+-   **"Load More" Functionality:** Enable users to load additional images.
 -   **Responsive Design:** The application adapts to different screen sizes for optimal viewing experience.
 
 ---
 
 ## Demo
 
-You can view a live demo of the project at: [https://goit-react-hw-04-gokhankkaraduman.vercel.app/](https://goit-react-hw-04-gokhankkaraduman.vercel.app/)  ---
+You can view a live demo of the project at: [https://goit-react-hw-04-gokhankkaraduman.vercel.app/](https://goit-react-hw-04-gokhankkaraduman.vercel.app/)
+
+---
 
 ## Contributing
 
-Contributions are welcome!  If you'd like to contribute to this project, please follow these steps:
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
 1.  **Fork** the repository.
 2.  **Create a new branch** for your feature or bug fix (`git checkout -b feature/your-feature`).
@@ -87,4 +95,6 @@ Contributions are welcome!  If you'd like to contribute to this project, please 
 If you have any questions or suggestions, please feel free to contact me:
 
 -   GitHub: [https://github.com/gokhankkaraduman](https://github.com/gokhankkaraduman)
--   Email: [gokhan.kkaraduman3@gmail.com]  ---
+-   Email: gokhan.kkaraduman3@gmail.com
+
+---
